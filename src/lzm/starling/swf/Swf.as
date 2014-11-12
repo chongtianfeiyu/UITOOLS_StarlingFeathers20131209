@@ -431,7 +431,6 @@ package lzm.starling.swf
 			var objData:SpriteData;
 			var display:Object;
 			var fun:Function;
-			trace("===========");
 			for (var i:int = 0; i < length; i++) 
 			{
 				objData = batchData.spriteChildsData[i];													//当前的sprite数据
@@ -451,7 +450,6 @@ package lzm.starling.swf
 				display.alpha = objData.alpha;
 				quadBatch.addChild(display as DisplayObject);
 				
-				trace(objData.childClassName);
 			}
 			
 			quadBatch.spriteName = className;

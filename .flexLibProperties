@@ -1,25 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
-  <includeClasses>
-    <classEntry path="lzm.starling.gestures.RotationGestures"/>
-    <classEntry path="lzm.starling.gestures.ZoomGestures"/>
-    <classEntry path="extend.PixelMaskDisplayObject"/>
-    <classEntry path="lzm.starling.display.GridMask"/>
-    <classEntry path="lzm.starling.swf.components.ComponentConfig"/>
-    <classEntry path="lzm.starling.swf.components.feathers.FeathersButton"/>
-    <classEntry path="lzm.starling.swf.components.ISwfComponent"/>
-    <classEntry path="lzm.starling.swf.components.feathers.FeathersCheck"/>
-    <classEntry path="lzm.starling.swf.components.feathers.FeathersTextInput"/>
-    <classEntry path="lzm.starling.swf.components.feathers.FeathersProgressBar"/>
-    <classEntry path="lzm.starling.swf.components.propertyvalues.ArrayPropertys"/>
-    <classEntry path="lzm.starling.entityComponent.effects.BlurComponent"/>
-    <classEntry path="lzm.starling.entityComponent.gestures.DragGesturesComponent"/>
-    <classEntry path="lzm.starling.swf.SwfAssetManager"/>
-    <classEntry path="lzm.starling.swf.components.feathers.Comp_FeathersLabel"/>
-    <classEntry path="lzm.starling.swf.components.feathers.Comp_convert_solder_btn"/>
-    <classEntry path="lzm.starling.swf.Scale9BatchUtil"/>
-    <classEntry path="lzm.starling.swf.display.SwfQuadBatch"/>
-  </includeClasses>
+  <includeClasses/>
   <includeResources/>
   <namespaceManifests/>
 </flexLibProperties>

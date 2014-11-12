@@ -22,7 +22,6 @@ package lzm.starling.swf
 		public function SwfUpdateManager(fps:int,starlingRoot:Sprite){
 			_fpsUtil = new FPSUtil(fps);
 			_starlingRoot = starlingRoot;
-			
 			_movieClips = new Vector.<SwfMovieClip>();
 		}
 		
@@ -64,7 +63,6 @@ package lzm.starling.swf
 		
 		public function dispose():void{
 			_starlingRoot.removeEventListener(Event.ENTER_FRAME,enterFrame);
-			
 			_starlingRoot = null;
 			_fpsUtil = null;
 			_movieClips = null;
