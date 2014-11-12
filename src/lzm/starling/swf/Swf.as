@@ -56,6 +56,7 @@ package lzm.starling.swf
 		public static const dataKey_Componet:String 			= "comp";
 		public static const dataKey_MovieBatchEffect:String 	= "mbe";
 		public static const dataKey_QuadBatch:String			= "qb";
+		public static const dataKey_QBMovieClip:String			= "qbm";
 		public static const ANGLE_TO_RADIAN:Number = Math.PI / 180;
 		public static var starlingRoot:Sprite;
 		
@@ -185,7 +186,7 @@ package lzm.starling.swf
 			
 			for (var i:int = 0; i < length; i++) 
 			{
-				objData = sprData.spriteChildsData[i];													//当前的sprite数据
+				objData = sprData.spriteChildsData[i];											//当前的sprite数据
 				fun = createFuns[objData.type];													//获取创建对像的方法
 				display = fun(objData.childClassName,objData);									//创建一个子级对象
 				display.name = objData.childName;												//元件名称
@@ -457,6 +458,11 @@ package lzm.starling.swf
 			quadBatch.spriteData = batchData;
 			
 			return quadBatch;
+		}
+		
+		public function createQBMovieClip(className:String,data:Object = null):DisplayObject
+		{
+			
 		}
 		
 		/**

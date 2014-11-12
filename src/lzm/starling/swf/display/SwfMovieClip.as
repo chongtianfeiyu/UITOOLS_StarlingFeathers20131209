@@ -23,7 +23,7 @@ package lzm.starling.swf.display
 		private var _frames:Array;							//所有的帧信息
 		private var _labels:Array;							//所有的label信息
 		private var __frameInfos:FrameChildData;			//当前帧信息			
-		private var _displayObjects:Object;				//子级对象集
+		private var _displayObjects:Object;					//子级对象集
 		
 		private var _startFrame:int;						//开始帧数
 		private var _endFrame:int;							//结束帧数
