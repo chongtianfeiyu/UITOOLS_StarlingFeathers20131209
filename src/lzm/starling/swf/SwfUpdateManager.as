@@ -1,5 +1,6 @@
 package lzm.starling.swf
 {
+	import lzm.starling.swf.display.IMovieClip;
 	import lzm.starling.swf.display.SwfMovieClip;
 	
 	import starling.display.Sprite;
@@ -17,15 +18,15 @@ package lzm.starling.swf
 		private var _starlingRoot:Sprite;
 		private var _fpsUtil:FPSUtil;
 		
-		private var _movieClips:Vector.<SwfMovieClip>;
+		private var _movieClips:Vector.<IMovieClip>;
 		
 		public function SwfUpdateManager(fps:int,starlingRoot:Sprite){
 			_fpsUtil = new FPSUtil(fps);
 			_starlingRoot = starlingRoot;
-			_movieClips = new Vector.<SwfMovieClip>();
+			_movieClips = new Vector.<IMovieClip>();
 		}
 		
-		public function addSwfMovieClip(movieClip:SwfMovieClip):void{
+		public function addSwfMovieClip(movieClip:IMovieClip):void{
 			var index:int = _movieClips.indexOf(movieClip);
 			if(index == -1){
 				_movieClips.push(movieClip);
@@ -35,7 +36,7 @@ package lzm.starling.swf
 			}
 		}
 		
-		public function removeSwfMovieClip(movieClip:SwfMovieClip):void{
+		public function removeSwfMovieClip(movieClip:IMovieClip):void{
 			var index:int = _movieClips.indexOf(movieClip);
 			if(index != -1){
 				_movieClips.splice(index,1);

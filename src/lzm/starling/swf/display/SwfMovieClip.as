@@ -14,7 +14,7 @@ package lzm.starling.swf.display
 	/**
 	 * @author zmliu
 	 */	
-	public class SwfMovieClip extends SwfSprite
+	public class SwfMovieClip extends SwfSprite implements IMovieClip
 	{
 		public static const ANGLE_TO_RADIAN:Number = Math.PI / 180;
 		
@@ -32,10 +32,9 @@ package lzm.starling.swf.display
 		
 		private var _isPlay:Boolean = false;
 		private var _loop:Boolean = true;
-		private var _autoUpdate:Boolean = true;//是否自动更新
-		
-		private var _completeFunction:Function = null;//播放完毕的回调
-		private var _hasCompleteListener:Boolean = false;//是否监听过播放完毕的事件
+		private var _autoUpdate:Boolean = true;				//是否自动更新
+		private var _completeFunction:Function = null;		//播放完毕的回调
+		private var _hasCompleteListener:Boolean = false;	//是否监听过播放完毕的事件
 		
 		public function SwfMovieClip(frames:Array,labels:Array,displayObjects:Object,ownerSwf:Swf)
 		{
@@ -72,7 +71,7 @@ package lzm.starling.swf.display
 					return;
 				}
 				
-				if(_startFrame == _endFrame) //只有一帧就不要循环下去了
+				if(_startFrame == _endFrame) 		//只有一帧就不要循环下去了
 				{
 					stop(false);
 					return;

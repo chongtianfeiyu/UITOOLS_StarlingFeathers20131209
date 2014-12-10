@@ -2,6 +2,7 @@
 <flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
   <includeClasses>
     <classEntry path="lzm.starling.swf.display.QBMovieClip"/>
+    <classEntry path="lzm.starling.swf.display.IMovieClip"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

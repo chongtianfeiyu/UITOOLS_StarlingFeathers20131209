@@ -46,12 +46,12 @@ package lzm.starling.swf
 	 */
 	public class Swf
 	{
-		public static const dataKey_Sprite:String 			= "spr";
+		public static const dataKey_Sprite:String 				= "spr";
 		public static const dataKey_Image:String 				= "img";
 		public static const dataKey_MovieClip:String 			= "mc";
 		public static const dataKey_TextField:String 			= "text";
-		public static const dataKey_Button:String 			= "btn";
-		public static const dataKey_Scale9:String 			= "s9";
+		public static const dataKey_Button:String 				= "btn";
+		public static const dataKey_Scale9:String 				= "s9";
 		public static const dataKey_ShapeImg:String 			= "shapeImg";
 		public static const dataKey_Componet:String 			= "comp";
 		public static const dataKey_MovieBatchEffect:String 	= "mbe";
@@ -434,7 +434,7 @@ package lzm.starling.swf
 			var fun:Function;
 			for (var i:int = 0; i < length; i++) 
 			{
-				objData = batchData.spriteChildsData[i];													//当前的sprite数据
+				objData = batchData.spriteChildsData[i];										//当前的sprite数据
 				fun = createFuns[objData.type];													//获取创建对像的方法
 				display = fun(objData.childClassName,objData);									//创建一个子级对象
 				display.name = objData.childName;												//元件名称
@@ -450,7 +450,6 @@ package lzm.starling.swf
 				display.skewY = objData.sketwY * ANGLE_TO_RADIAN;
 				display.alpha = objData.alpha;
 				quadBatch.addChild(display as DisplayObject);
-				
 			}
 			
 			quadBatch.spriteName = className;
@@ -462,7 +461,7 @@ package lzm.starling.swf
 		
 		public function createQBMovieClip(className:String,data:Object = null):DisplayObject
 		{
-			
+			return null;
 		}
 		
 		/**
@@ -622,12 +621,11 @@ package lzm.starling.swf
 		
 		/**
 		 * 返回子集类型
-		 *
 		 */
 		public static function getChildType(className:String):String
 		{
-			var types:Array = ["img","spr","mc","btn","s9","bat","flash.text::TextField","text","btn","s9","shapeImg","comp","qb"];
-			var types1:Array = ["img","spr","mc","btn","s9","bat","text","text","btn","s9","shapeImg","comp","qb"];
+			var types:Array = ["img","spr","mc","btn","s9","bat","flash.text::TextField","text","btn","s9","shapeImg","comp","qb","qbm"];
+			var types1:Array = ["img","spr","mc","btn","s9","bat","text","text","btn","s9","shapeImg","comp","qb","qbm"];
 			var i:int = 0;
 			var len:int = types.length;
 			for (i=0; i != len; i++) 

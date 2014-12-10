@@ -82,7 +82,15 @@ package com.coffeebean.swf.typeData {
 		/**
 		 *  @private
 		 */
-		public static const IMAGEDATAS:RepeatedFieldDescriptor$TYPE_MESSAGE = new RepeatedFieldDescriptor$TYPE_MESSAGE("com.coffeebean.swf.typeData.TypeData.imageDatas", "imageDatas", (400008 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return com.coffeebean.swf.typeData.ImgData; });
+		public static const QBMOVIECLIPNAMES:RepeatedFieldDescriptor$TYPE_STRING = new RepeatedFieldDescriptor$TYPE_STRING("com.coffeebean.swf.typeData.TypeData.qbmovieClipNames", "qbmovieClipNames", (400008 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED);
+
+		[ArrayElementType("String")]
+		public var qbmovieClipNames:Array = [];
+
+		/**
+		 *  @private
+		 */
+		public static const IMAGEDATAS:RepeatedFieldDescriptor$TYPE_MESSAGE = new RepeatedFieldDescriptor$TYPE_MESSAGE("com.coffeebean.swf.typeData.TypeData.imageDatas", "imageDatas", (400009 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return com.coffeebean.swf.typeData.ImgData; });
 
 		[ArrayElementType("com.coffeebean.swf.typeData.ImgData")]
 		public var imageDatas:Array = [];
@@ -90,7 +98,7 @@ package com.coffeebean.swf.typeData {
 		/**
 		 *  @private
 		 */
-		public static const SPRITEDATAS:RepeatedFieldDescriptor$TYPE_MESSAGE = new RepeatedFieldDescriptor$TYPE_MESSAGE("com.coffeebean.swf.typeData.TypeData.spriteDatas", "spriteDatas", (400009 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return com.coffeebean.swf.typeData.SpriteData; });
+		public static const SPRITEDATAS:RepeatedFieldDescriptor$TYPE_MESSAGE = new RepeatedFieldDescriptor$TYPE_MESSAGE("com.coffeebean.swf.typeData.TypeData.spriteDatas", "spriteDatas", (400010 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return com.coffeebean.swf.typeData.SpriteData; });
 
 		[ArrayElementType("com.coffeebean.swf.typeData.SpriteData")]
 		public var spriteDatas:Array = [];
@@ -98,7 +106,7 @@ package com.coffeebean.swf.typeData {
 		/**
 		 *  @private
 		 */
-		public static const MOVIECLIPDATAS:RepeatedFieldDescriptor$TYPE_MESSAGE = new RepeatedFieldDescriptor$TYPE_MESSAGE("com.coffeebean.swf.typeData.TypeData.movieClipDatas", "movieClipDatas", (400010 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return com.coffeebean.swf.typeData.MovieClipData; });
+		public static const MOVIECLIPDATAS:RepeatedFieldDescriptor$TYPE_MESSAGE = new RepeatedFieldDescriptor$TYPE_MESSAGE("com.coffeebean.swf.typeData.TypeData.movieClipDatas", "movieClipDatas", (400011 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return com.coffeebean.swf.typeData.MovieClipData; });
 
 		[ArrayElementType("com.coffeebean.swf.typeData.MovieClipData")]
 		public var movieClipDatas:Array = [];
@@ -106,7 +114,7 @@ package com.coffeebean.swf.typeData {
 		/**
 		 *  @private
 		 */
-		public static const BUTTONDATAS:RepeatedFieldDescriptor$TYPE_MESSAGE = new RepeatedFieldDescriptor$TYPE_MESSAGE("com.coffeebean.swf.typeData.TypeData.buttonDatas", "buttonDatas", (400011 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return com.coffeebean.swf.typeData.SpriteData; });
+		public static const BUTTONDATAS:RepeatedFieldDescriptor$TYPE_MESSAGE = new RepeatedFieldDescriptor$TYPE_MESSAGE("com.coffeebean.swf.typeData.TypeData.buttonDatas", "buttonDatas", (400012 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return com.coffeebean.swf.typeData.SpriteData; });
 
 		[ArrayElementType("com.coffeebean.swf.typeData.SpriteData")]
 		public var buttonDatas:Array = [];
@@ -114,7 +122,7 @@ package com.coffeebean.swf.typeData {
 		/**
 		 *  @private
 		 */
-		public static const S9DATAS:RepeatedFieldDescriptor$TYPE_MESSAGE = new RepeatedFieldDescriptor$TYPE_MESSAGE("com.coffeebean.swf.typeData.TypeData.s9Datas", "s9Datas", (400012 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return com.coffeebean.swf.typeData.S9ImageData; });
+		public static const S9DATAS:RepeatedFieldDescriptor$TYPE_MESSAGE = new RepeatedFieldDescriptor$TYPE_MESSAGE("com.coffeebean.swf.typeData.TypeData.s9Datas", "s9Datas", (400013 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return com.coffeebean.swf.typeData.S9ImageData; });
 
 		[ArrayElementType("com.coffeebean.swf.typeData.S9ImageData")]
 		public var s9Datas:Array = [];
@@ -122,7 +130,7 @@ package com.coffeebean.swf.typeData {
 		/**
 		 *  @private
 		 */
-		public static const SHAPEIMGDATAS:RepeatedFieldDescriptor$TYPE_MESSAGE = new RepeatedFieldDescriptor$TYPE_MESSAGE("com.coffeebean.swf.typeData.TypeData.shapeImgDatas", "shapeImgDatas", (400013 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return com.coffeebean.swf.typeData.ImgData; });
+		public static const SHAPEIMGDATAS:RepeatedFieldDescriptor$TYPE_MESSAGE = new RepeatedFieldDescriptor$TYPE_MESSAGE("com.coffeebean.swf.typeData.TypeData.shapeImgDatas", "shapeImgDatas", (400014 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return com.coffeebean.swf.typeData.ImgData; });
 
 		[ArrayElementType("com.coffeebean.swf.typeData.ImgData")]
 		public var shapeImgDatas:Array = [];
@@ -130,7 +138,7 @@ package com.coffeebean.swf.typeData {
 		/**
 		 *  @private
 		 */
-		public static const QUADBATCHDATAS:RepeatedFieldDescriptor$TYPE_MESSAGE = new RepeatedFieldDescriptor$TYPE_MESSAGE("com.coffeebean.swf.typeData.TypeData.quadBatchDatas", "quadBatchDatas", (400014 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return com.coffeebean.swf.typeData.SpriteData; });
+		public static const QUADBATCHDATAS:RepeatedFieldDescriptor$TYPE_MESSAGE = new RepeatedFieldDescriptor$TYPE_MESSAGE("com.coffeebean.swf.typeData.TypeData.quadBatchDatas", "quadBatchDatas", (400015 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return com.coffeebean.swf.typeData.SpriteData; });
 
 		[ArrayElementType("com.coffeebean.swf.typeData.SpriteData")]
 		public var quadBatchDatas:Array = [];
@@ -138,10 +146,18 @@ package com.coffeebean.swf.typeData {
 		/**
 		 *  @private
 		 */
-		public static const COMPONENTDATAS:RepeatedFieldDescriptor$TYPE_MESSAGE = new RepeatedFieldDescriptor$TYPE_MESSAGE("com.coffeebean.swf.typeData.TypeData.componentDatas", "componentDatas", (400015 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return com.coffeebean.swf.typeData.SpriteData; });
+		public static const COMPONENTDATAS:RepeatedFieldDescriptor$TYPE_MESSAGE = new RepeatedFieldDescriptor$TYPE_MESSAGE("com.coffeebean.swf.typeData.TypeData.componentDatas", "componentDatas", (400016 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return com.coffeebean.swf.typeData.SpriteData; });
 
 		[ArrayElementType("com.coffeebean.swf.typeData.SpriteData")]
 		public var componentDatas:Array = [];
+
+		/**
+		 *  @private
+		 */
+		public static const QBMOVIECLIPDATAS:RepeatedFieldDescriptor$TYPE_MESSAGE = new RepeatedFieldDescriptor$TYPE_MESSAGE("com.coffeebean.swf.typeData.TypeData.qbmovieClipDatas", "qbmovieClipDatas", (400017 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return com.coffeebean.swf.typeData.MovieClipData; });
+
+		[ArrayElementType("com.coffeebean.swf.typeData.MovieClipData")]
+		public var qbmovieClipDatas:Array = [];
 
 		/**
 		 *  @private
@@ -179,37 +195,45 @@ package com.coffeebean.swf.typeData {
 				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 400007);
 				com.netease.protobuf.WriteUtils.write$TYPE_STRING(output, this.componentNames[componentNames$index]);
 			}
-			for (var imageDatas$index:uint = 0; imageDatas$index < this.imageDatas.length; ++imageDatas$index) {
+			for (var qbmovieClipNames$index:uint = 0; qbmovieClipNames$index < this.qbmovieClipNames.length; ++qbmovieClipNames$index) {
 				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 400008);
+				com.netease.protobuf.WriteUtils.write$TYPE_STRING(output, this.qbmovieClipNames[qbmovieClipNames$index]);
+			}
+			for (var imageDatas$index:uint = 0; imageDatas$index < this.imageDatas.length; ++imageDatas$index) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 400009);
 				com.netease.protobuf.WriteUtils.write$TYPE_MESSAGE(output, this.imageDatas[imageDatas$index]);
 			}
 			for (var spriteDatas$index:uint = 0; spriteDatas$index < this.spriteDatas.length; ++spriteDatas$index) {
-				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 400009);
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 400010);
 				com.netease.protobuf.WriteUtils.write$TYPE_MESSAGE(output, this.spriteDatas[spriteDatas$index]);
 			}
 			for (var movieClipDatas$index:uint = 0; movieClipDatas$index < this.movieClipDatas.length; ++movieClipDatas$index) {
-				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 400010);
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 400011);
 				com.netease.protobuf.WriteUtils.write$TYPE_MESSAGE(output, this.movieClipDatas[movieClipDatas$index]);
 			}
 			for (var buttonDatas$index:uint = 0; buttonDatas$index < this.buttonDatas.length; ++buttonDatas$index) {
-				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 400011);
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 400012);
 				com.netease.protobuf.WriteUtils.write$TYPE_MESSAGE(output, this.buttonDatas[buttonDatas$index]);
 			}
 			for (var s9Datas$index:uint = 0; s9Datas$index < this.s9Datas.length; ++s9Datas$index) {
-				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 400012);
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 400013);
 				com.netease.protobuf.WriteUtils.write$TYPE_MESSAGE(output, this.s9Datas[s9Datas$index]);
 			}
 			for (var shapeImgDatas$index:uint = 0; shapeImgDatas$index < this.shapeImgDatas.length; ++shapeImgDatas$index) {
-				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 400013);
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 400014);
 				com.netease.protobuf.WriteUtils.write$TYPE_MESSAGE(output, this.shapeImgDatas[shapeImgDatas$index]);
 			}
 			for (var quadBatchDatas$index:uint = 0; quadBatchDatas$index < this.quadBatchDatas.length; ++quadBatchDatas$index) {
-				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 400014);
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 400015);
 				com.netease.protobuf.WriteUtils.write$TYPE_MESSAGE(output, this.quadBatchDatas[quadBatchDatas$index]);
 			}
 			for (var componentDatas$index:uint = 0; componentDatas$index < this.componentDatas.length; ++componentDatas$index) {
-				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 400015);
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 400016);
 				com.netease.protobuf.WriteUtils.write$TYPE_MESSAGE(output, this.componentDatas[componentDatas$index]);
+			}
+			for (var qbmovieClipDatas$index:uint = 0; qbmovieClipDatas$index < this.qbmovieClipDatas.length; ++qbmovieClipDatas$index) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 400017);
+				com.netease.protobuf.WriteUtils.write$TYPE_MESSAGE(output, this.qbmovieClipDatas[qbmovieClipDatas$index]);
 			}
 			for (var fieldKey:* in this) {
 				super.writeUnknown(output, fieldKey);
@@ -248,28 +272,34 @@ package com.coffeebean.swf.typeData {
 					this.componentNames.push(com.netease.protobuf.ReadUtils.read$TYPE_STRING(input));
 					break;
 				case 400008:
-					this.imageDatas.push(com.netease.protobuf.ReadUtils.read$TYPE_MESSAGE(input, new com.coffeebean.swf.typeData.ImgData()));
+					this.qbmovieClipNames.push(com.netease.protobuf.ReadUtils.read$TYPE_STRING(input));
 					break;
 				case 400009:
-					this.spriteDatas.push(com.netease.protobuf.ReadUtils.read$TYPE_MESSAGE(input, new com.coffeebean.swf.typeData.SpriteData()));
+					this.imageDatas.push(com.netease.protobuf.ReadUtils.read$TYPE_MESSAGE(input, new com.coffeebean.swf.typeData.ImgData()));
 					break;
 				case 400010:
-					this.movieClipDatas.push(com.netease.protobuf.ReadUtils.read$TYPE_MESSAGE(input, new com.coffeebean.swf.typeData.MovieClipData()));
+					this.spriteDatas.push(com.netease.protobuf.ReadUtils.read$TYPE_MESSAGE(input, new com.coffeebean.swf.typeData.SpriteData()));
 					break;
 				case 400011:
-					this.buttonDatas.push(com.netease.protobuf.ReadUtils.read$TYPE_MESSAGE(input, new com.coffeebean.swf.typeData.SpriteData()));
+					this.movieClipDatas.push(com.netease.protobuf.ReadUtils.read$TYPE_MESSAGE(input, new com.coffeebean.swf.typeData.MovieClipData()));
 					break;
 				case 400012:
-					this.s9Datas.push(com.netease.protobuf.ReadUtils.read$TYPE_MESSAGE(input, new com.coffeebean.swf.typeData.S9ImageData()));
+					this.buttonDatas.push(com.netease.protobuf.ReadUtils.read$TYPE_MESSAGE(input, new com.coffeebean.swf.typeData.SpriteData()));
 					break;
 				case 400013:
-					this.shapeImgDatas.push(com.netease.protobuf.ReadUtils.read$TYPE_MESSAGE(input, new com.coffeebean.swf.typeData.ImgData()));
+					this.s9Datas.push(com.netease.protobuf.ReadUtils.read$TYPE_MESSAGE(input, new com.coffeebean.swf.typeData.S9ImageData()));
 					break;
 				case 400014:
-					this.quadBatchDatas.push(com.netease.protobuf.ReadUtils.read$TYPE_MESSAGE(input, new com.coffeebean.swf.typeData.SpriteData()));
+					this.shapeImgDatas.push(com.netease.protobuf.ReadUtils.read$TYPE_MESSAGE(input, new com.coffeebean.swf.typeData.ImgData()));
 					break;
 				case 400015:
+					this.quadBatchDatas.push(com.netease.protobuf.ReadUtils.read$TYPE_MESSAGE(input, new com.coffeebean.swf.typeData.SpriteData()));
+					break;
+				case 400016:
 					this.componentDatas.push(com.netease.protobuf.ReadUtils.read$TYPE_MESSAGE(input, new com.coffeebean.swf.typeData.SpriteData()));
+					break;
+				case 400017:
+					this.qbmovieClipDatas.push(com.netease.protobuf.ReadUtils.read$TYPE_MESSAGE(input, new com.coffeebean.swf.typeData.MovieClipData()));
 					break;
 				default:
 					super.readUnknown(input, tag);
