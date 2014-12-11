@@ -13,7 +13,7 @@ package lzm.starling.swf.display
 	 * qb动画剪辑，子级显示对像只能是img或者是qb 
 	 * @author taojiang
 	 */	
-	public class QBMovieClip extends SwfQuadBatch implements IMovieClip
+	public class SwfQBMovieClip extends SwfQuadBatch implements IMovieClip
 	{
 		public static const ANGLE_TO_RADIAN:Number = Math.PI / 180;
 		
@@ -33,7 +33,7 @@ package lzm.starling.swf.display
 		private var _hasCompleteListener:Boolean;
 		
 		
-		public function QBMovieClip(frames:Array,labels:Array,displayObjects:Object,ownerSwf:Swf):void
+		public function SwfQBMovieClip(frames:Array,labels:Array,displayObjects:Object,ownerSwf:Swf):void
 		{
 			super();
 			this._frames = frames;
